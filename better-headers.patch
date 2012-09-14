@@ -1,5 +1,5 @@
 Name: Better Email Headers
-Version: 3.0.5-1
+Version: 3.0.5-2
 Author: HaDAk
 Description: Better Email Headers aims to compact the header fields in the email message view, so you can spend more time focusing on what's actually important.
 
@@ -107,7 +107,7 @@ Description: Better Email Headers aims to compact the header fields in the email
  		var emailData = this.email.data;
  		var base = emailData.from.name || emailData.from.addr;
  		this.$.from.setContent(contactDetails.getName() || base);
-+		this.$.from_addr.setContent(contactDetails.getName() || base1);
++		this.$.from_addr.setContent(base1);
  	},
  	
  	showMessageError: function(divName) {

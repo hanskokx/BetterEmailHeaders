@@ -755,7 +755,7 @@ enyo.kind({
 		var base = emailData.from.name || emailData.from.addr;
 		var base1 = emailData.from.addr;
 		this.$.from.setContent(contactDetails.getName() || base);
-		this.$.from_addr.setContent(contactDetails.getName() || base1);
+		this.$.from_addr.setContent(base1);
 	},
 	
 	showMessageError: function(divName) {
